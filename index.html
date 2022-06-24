@@ -4,47 +4,71 @@
 <head>
     <meta charset="utf-8" />
     <title>NAVER</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./naver.css">
 </head>
 
 <body>
-    <h1>
-        <a href="http://www.naver.com">네이버</a>
-        <!-- 아아아아아 주석주석-->
-    </h1>
-    <fieldset>
-        <legend>검색</legend>
-        <input type="checkbox" />
-        <input type="radio" name="group" />
-        <input type="radio" name="group" />
-        <button>버튼</button>
-    </fieldset>
-    <ul>
-        <li>메일</li>
-        <li>카페</li>
-        <li>블로그</li>
-        <li>지식인</li>
-        <li>쇼핑</li>
-        <li>법률</li>
-
-    </ul>
-    <h2>실시간 검색어</h2>
-    <h3>연합 뉴스</h3>
-    <ol>
-        <li>충격) 제로초 지금 목아파...</li>
-        <li>속보) 방송 종료하고싶어...</li>
-        <li>중대발표: 다음 강좌 언제될지 모름</li>
-    </ol>
-    <h3>언론사목록</h3>
-    <ul>
-        <li><img = src="./매일경제.png" alt="매일경제" /></li>
-        <li><img = src="./서울신문.png" alt="서울신문" /></li>
-    </ul>
-    <b>굵게</b>
-    <h3>로그인</h3>
-    <h4>뉴스</h4>
-    <h5>법률</h5>
-    <h6>쇼핑</h6>
+    <header>
+        <div id="header_center">
+            <!-- 가운데 정렬용 div -->
+            <!-- 속성명1: 속성값1; 속성명2: 속성값2; -->
+            <!-- 인라인 스타일 html 안에다가 css를 바로 적어주는것 권장x -->
+            <div>
+                네이버를 시작페이지로
+            </div>
+            <div id="header_search">
+                <h1 id="header_logo">
+                    <a href="http://www.naver.com">네이버</a>
+                    <!-- 아아아아아 주석주석-->
+                </h1>
+                <h2>검색창</h2>
+                <fieldset>
+                    <legend>검색</legend>
+                    <input type="text">
+                    <!-- <input type="checkbox" />
+                    <input type="radio" name="group" />
+                    <input type="radio" name="group" /> -->
+                    <button>검색</button>
+                </fieldset>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>메일</li>
+            <li>카페</li>
+            <li>블로그</li>
+            <li>지식인</li>
+            <li>쇼핑</li>
+            <li>법률</li>
+        </ul>
+    </nav>
+    <!------------------------------ 메인문시작 ---------------------------------->
+    <main>
+        <h2>실시간 검색어</h2>
+        <h3>연합 뉴스</h3>
+        <ol>
+            <li>충격) 제로초 지금 목아파...</li>
+            <li>속보) 방송 종료하고싶어...</li>
+            <li>중대발표: 다음 강좌 언제될지 모름</li>
+        </ol>
+        <h3>언론사목록</h3>
+        <ul>
+            <li><img src="./매일경제.png" alt="매일경제" /></li>
+            <li><img src="./서울신문.png" alt="서울신문" /></li>
+        </ul>
+        <b>굵게</b>
+        <h3>로그인</h3>
+        <h4>뉴스</h4>
+        <h5>법률</h5>
+        <h6>쇼핑</h6>
+    </main>
+    <footer>
+        <div>공지사항</div>
+        <div>Creators</div>
+        <div>회사소개</div>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,30 @@
+#header_center{
+    /* id는 # */
+    margin: 0 auto;
+    width:1080px;
+
+    
+}
+
+/* #header_search{
+    text-decoration: underline;
+} */
+
+#header_search > h1{
+    /* 자식태그는 > 로 이렇게 찾는군여 */
+    width: 280px;
+    display: inline-block;
+}
+
+#header_search h2{
+    display: none;
+}
+
+#header_search fieldset{
+    width: 520px;
+    display: inline-block;
+}
+/* #header_center h1{
+    자손태그는 한칸 띄워서 찾습니다.
+    보통은 꺽쇠(>) 쓰기 귀찮아서 자손선택으로 많이합니다.
+} */
