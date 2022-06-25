@@ -15,21 +15,28 @@
             <!-- 속성명1: 속성값1; 속성명2: 속성값2; -->
             <!-- 인라인 스타일 html 안에다가 css를 바로 적어주는것 권장x -->
             <div>
-                네이버를 시작페이지로
+                <span>네이버를 시작페이지로</span>
+                <span>쥬니어네이버</span>
+                <span>해피빈</span>
+                <!-- span은 inline-block이 아니라 inline임 -->
             </div>
             <div id="header_search">
-                <h1 id="header_logo">
-                    <a href="http://www.naver.com">네이버</a>
-                    <!-- 아아아아아 주석주석-->
-                </h1>
-                <h2>검색창</h2>
+                <a href="http://www.naver.com">
+                    <h1 id="header_logo"><span>네이버</span></h1>
+                </a>
+                <h2 class="blind">검색창</h2>
+                <!-- class는 여러개의 클래스를 적용 가능함 또 여러번 쓸 수 있음, 
+                     id는 가능은 하지만 정말 고유한 값의 느낌 -->
                 <fieldset>
-                    <legend>검색</legend>
-                    <input type="text">
+                    <legend class="blind">검색</legend>
+                    <input type="text" />
                     <!-- <input type="checkbox" />
                     <input type="radio" name="group" />
                     <input type="radio" name="group" /> -->
-                    <button>검색</button>
+                    <button>
+                        <span class="blind">검색</span>
+                        <span id="search_image"></span>
+                    </button>
                 </fieldset>
             </div>
         </div>
@@ -49,9 +56,9 @@
         <h2>실시간 검색어</h2>
         <h3>연합 뉴스</h3>
         <ol>
-            <li>충격) 제로초 지금 목아파...</li>
-            <li>속보) 방송 종료하고싶어...</li>
-            <li>중대발표: 다음 강좌 언제될지 모름</li>
+            <li>충격) 이번달 뇌동에도 수익전환</li>
+            <li>속보) 올해 총 손익 양전!!</li>
+            <li>중대발표: 6개월 후 수익시 시드추가</li>
         </ol>
         <h3>언론사목록</h3>
         <ul>
