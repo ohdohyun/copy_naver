@@ -1,6 +1,18 @@
 *{
     box-sizing: border-box;
 }
+
+#fixed{
+    position: fixed;
+    top:50px;
+    right: 50px;
+    display: inline;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
 .blind {
     position: absolute;
     width: 1px;
@@ -8,7 +20,7 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-#header_center {
+.center_align {
     /* id는 # */
     margin: 0 auto;
     width: 1080px;
@@ -16,6 +28,9 @@
 /* #header_search{
     text-decoration: underline;
 } */
+
+/******************************** header *******************************/
+
 #header_search a{
     /* display: inline-block; */
     text-decoration: none;
@@ -32,6 +47,8 @@
     background-position: 0px -156px; */
     background-size: 454px 434px;
     vertical-align: middle;
+    position: relative;
+    top: -6px;
 }
 #header_search h1>span{
     display: none;
@@ -42,7 +59,6 @@
 }
 
 #header_search fieldset {
-    
     margin-left: 20px;
     /* padding-top: 12px;
     padding-bottom: 12px;
@@ -55,8 +71,15 @@
     display: inline-block;
     border: 2px solid #03cf5d;
     vertical-align: middle;
+    position: relative;
+
+    /* relative는 자신의 위치를 기반으로 움직이는거고
+    absolute는 자신의 컨테이닝 블록을 기반으로 위치를 잡음 */
 }
 #header_search fieldset input{
+    vertical-align: top;
+    width: 405px;
+    height: 23px;
     border: none;
     padding: 0;
     outline: none;
@@ -74,7 +97,9 @@
     border: none;
     padding: 0;
     background-color: #03cf5d;
-
+    position: absolute;
+    right: -1px;
+    top: -2px;
 }
 
 #search_image{
@@ -86,4 +111,49 @@
     height: 22px;
     display: inline-block;
     margin: 14px;
+}
+
+/******************************** nav *******************************/
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li >a{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #03cf5d;
+    letter-spacing: -.3px;
+    text-decoration: none;
+}
+
+nav .nav_item {
+    display: inline-block;
+    margin-left: 6px;
+}
+
+nav li .ico_mail{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-position: -420px -73px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px 9px 0 0;
+    background-image: url("./sp_main.png");
+    background-size:457px 434px;
+}
+nav li .ico_TV{
+    display: inline-block;
+    width: 12px;
+    height: 14px;
+    background-position: -444px -49px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 9px 2px 0 0;
+    background-image: url("./sp_main.png");
+    background-size:457px 434px;
 }
