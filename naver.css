@@ -1,10 +1,10 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-#fixed{
+#fixed {
     position: fixed;
-    top:50px;
+    top: 50px;
     right: 50px;
     display: inline;
     width: 100px;
@@ -20,20 +20,105 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .center_align {
     /* id는 # */
     margin: 0 auto;
     width: 1080px;
 }
+
 /* #header_search{
     text-decoration: underline;
 } */
 
 /******************************** header *******************************/
 
-#header_search a{
+header {
+    height: 170px;
+}
+
+#header_search {
+    clear: both;
+}
+
+#header_top {
+    /* text-align: right; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* float: right; */
+    font-size: 11px;
+    color: #404040;
+}
+
+#ico_j_naver {
+    display: inline-block;
+    width: 60px;
+    height: 10px;
+    background-position: -262px -330px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px;
+    background-image: url("./sp_main.png");
+    background-size: 457px 434px;
+}
+
+#ico_j_naver:hover {
+    background-position: -200px -330px;
+    cursor: pointer;
+}
+
+#ico_happy_bin {
+    display: inline-block;
+    width: 34px;
+    height: 11px;
+    background-position: -369px -299px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px 3px 2px;
+    background-image: url("./sp_main.png");
+    background-size: 457px 434px;
+}
+
+#ico_happy_bin:hover {
+    background-position: -380px -199px;
+    cursor: pointer;
+
+}
+
+#header_search a {
     /* display: inline-block; */
     text-decoration: none;
+}
+
+#header_search .search_keyboard {
+    position: absolute;
+    top: 50%;
+    left: 82%;
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    background-position: -420px -402px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: -6px 0 0 -10px;
+    background-image: url("./sp_main.png");
+    background-size: 457px 434px;
+}
+
+#header_search .search_history {
+    position: absolute;
+    top: 60%;
+    left: 88%;
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    background-position: -408px -100px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: -6px 0 0 -10px;
+    background-image: url("./sp_main.png");
+    background-size: 457px 434px;
 }
 
 #header_search h1 {
@@ -50,9 +135,11 @@
     position: relative;
     top: -6px;
 }
-#header_search h1>span{
+
+#header_search h1>span {
     display: none;
-} 
+}
+
 #header_search h2 {
     display: none;
 
@@ -65,7 +152,7 @@
     padding-left: 12px;
     padding-right: 12px; 
     위 오른쪽 아래쪽 왼쪽 시계방향 */
-    padding: 12px 0px 12px 10px; 
+    padding: 12px 0px 12px 10px;
     width: 521px;
     height: 49px;
     display: inline-block;
@@ -76,7 +163,8 @@
     /* relative는 자신의 위치를 기반으로 움직이는거고
     absolute는 자신의 컨테이닝 블록을 기반으로 위치를 잡음 */
 }
-#header_search fieldset input{
+
+#header_search fieldset input {
     vertical-align: top;
     width: 405px;
     height: 23px;
@@ -85,12 +173,13 @@
     outline: none;
 
 }
+
 /* #header_center h1{
     자손태그는 한칸 띄워서 찾습니다.
     보통은 꺽쇠(>) 쓰기 귀찮아서 자손선택으로 많이합니다.
 } */
 
-#header_search fieldset button{
+#header_search fieldset button {
     width: 49px;
     height: 49px;
     outline: none;
@@ -102,11 +191,11 @@
     top: -2px;
 }
 
-#search_image{
+#search_image {
     background-image: url(./sp_main.png);
     background-position: -420px 0px;
     background-repeat: no-repeat;
-    background-size:457px 434px;
+    background-size: 457px 434px;
     width: 22px;
     height: 22px;
     display: inline-block;
@@ -115,13 +204,22 @@
 
 /******************************** nav *******************************/
 
-nav ul{
+nav {
+    height: 46px;
+    border-top: 1px solid #f1f3f6;
+}
+
+nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav li >a{
+nav .black_nav_item {
+    color: black;
+}
+
+nav li>a {
     font-size: 16px;
     line-height: 30px;
     font-weight: 700;
@@ -135,7 +233,7 @@ nav .nav_item {
     margin-left: 6px;
 }
 
-nav li .ico_mail{
+nav li .ico_mail {
     display: inline-block;
     width: 21px;
     height: 21px;
@@ -144,9 +242,10 @@ nav li .ico_mail{
     vertical-align: top;
     margin: 3px 9px 0 0;
     background-image: url("./sp_main.png");
-    background-size:457px 434px;
+    background-size: 457px 434px;
 }
-nav li .ico_TV{
+
+nav li .ico_TV {
     display: inline-block;
     width: 12px;
     height: 14px;
@@ -155,5 +254,5 @@ nav li .ico_TV{
     vertical-align: top;
     margin: 9px 2px 0 0;
     background-image: url("./sp_main.png");
-    background-size:457px 434px;
+    background-size: 457px 434px;
 }

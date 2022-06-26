@@ -16,10 +16,10 @@
             <!-- 가운데 정렬용 div -->
             <!-- 속성명1: 속성값1; 속성명2: 속성값2; -->
             <!-- 인라인 스타일 html 안에다가 css를 바로 적어주는것 권장x -->
-            <div>
-                <span>네이버를 시작페이지로</span>
-                <span>쥬니어네이버</span>
-                <span>해피빈</span>
+            <div id="header_top">
+                <span>네이버를 시작페이지로> |</span>
+                <span id="ico_j_naver"></span><span class="blind">쥬니어네이버</span>
+                <span id="ico_happy_bin"></span><span class="blind">해피빈</span>
                 <!-- span은 inline-block이 아니라 inline임 -->
             </div>
             <div id="header_search">
@@ -32,6 +32,8 @@
                 <fieldset>
                     <legend class="blind">검색</legend>
                     <input type="text" />
+                    <span class="search_keyboard"></span>
+                    <span class="search_history"></span>
                     <!-- <input type="checkbox" />
                     <input type="radio" name="group" />
                     <input type="radio" name="group" /> -->
